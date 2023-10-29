@@ -1,5 +1,12 @@
+body{
+    background-color: blanchedalmond;
+    font-family: 'Times New Roman', Times, serif;
+}
+
 h1 {
     text-align: center;
+    color: rgba(0, 0, 0, 0.705);
+    text-transform: uppercase;
 }
 
 input {
@@ -11,8 +18,4 @@ button {
     margin-bottom: 10px;
     border-radius: 5px;
     background-color: rgba(109, 29, 0, 0.333);
-}
-
-#ficha {
-    width: 300px;
 }
