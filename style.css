@@ -1,0 +1,23 @@
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+input {
+    width: 300px;
+}
+
+button {
+    width: 100px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: rgba(109, 29, 0, 0.333);
+}
+
+#ficha {
+    width: 300px;
+    margin-bottom: 10px;
+}
