@@ -15,18 +15,24 @@ document.getElementById("buscar").addEventListener("click", async () => {
 
     const cards = document.querySelectorAll("body div.card");
 
-
+    cards.forEach(card => {
+        card.remove();
+    });
 
     const notfound = document.querySelectorAll("h3");
 
-
+    notfound.forEach(notfound => {
+        notfound.remove();
+    });
 
     let nombrePokemon = document.getElementById("nombre");
     let valor = nombrePokemon.value.toLowerCase();
 
     await buscarPokemon(valor);
 
+    await buscarUrl(valor);
 
+    await agregarFicha(valor);
 
 });
 
@@ -49,3 +55,18 @@ const buscarPokemon = async (valor) => {
         await agregarFicha(dataDos);
     }
 };
+
+// Función para buscar la url de cada pokemon de la API
+const buscarUrl = async (valor) => {
+    const responseUrl = await fetch(`https://pokeapi.co/api/v2/pokemon/${valor}`);
+    const dataDos = await responseUrl.json();
+    return dataDos;
+}
+
+// funcion para agregar la ficha de cada pokemon a la pagina
+const agregarFicha = async (valor) => {
+    console.log('Valor:', valor);
+    const ficha = document.createElement("div");
+    const dataDosObj = await buscarUrl(valor);
+    console.log(dataDosObj);
+}
