@@ -56,3 +56,62 @@ button:active{
 }
 
 /* BODY */
+body{
+    background-color: rgba(255, 0, 0, 0.733);
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0px;
+    position:relative;
+}
+
+.card {
+    position: relative;
+    height: fit-content;
+    font-family: 'Roboto Mono', monospace;
+    max-width: 900px;
+    border-radius: 4px;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    margin: 50px auto auto auto;
+    background-color: #eabcbc;
+    border: 1px solid black;
+    gap: 20px;
+    
+}
+
+.card::before {
+    content: '';
+    background: radial-gradient(black 33%, transparent 33%);
+    background-size: 3px 3px;
+    border-radius: 4px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: -1;
+}
+
+.card h2 {
+    text-transform: capitalize;
+}
+
+.card p {
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    padding: 5px;
+    font-size: 18px;
+    text-transform: uppercase;
+
+
+}
+
+.card img {
+    border-radius: 50%;
+    position: relative;
+    width: 150px;
+    margin: 10px 20px 10px 20px;
+    background-color: rgb(223, 223, 223);
+}
+
