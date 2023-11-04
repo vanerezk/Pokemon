@@ -1,21 +1,58 @@
-body{
-    background-color: blanchedalmond;
-    font-family: 'Times New Roman', Times, serif;
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*Header*/
+
+header {
+    padding: 0px 0 20px 0;
 }
 
 h1 {
     text-align: center;
-    color: rgba(0, 0, 0, 0.705);
-    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 5px;
+
 }
 
-input {
-    width: 300px;
+.buscadorPokemon {
+    display: flex;
+    justify-content: center;
+}
+
+#nombre {
+    width: 200px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-sizing: border-box;
 }
 
 button {
-    width: 100px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    background-color: rgba(109, 29, 0, 0.333);
+    width: auto;
+    box-shadow: 8px 8px 14px -6px #e39c32;
+    background-color:#ebda6a;
+    color: white;
+    font-weight: bolder;
+    padding: 14px 20px;
+    margin: 8px 10px 8px 10px;
+    border: 1px solid #ebda6a;
+    border-radius: 15px;
+    cursor: pointer;
+    text-shadow: 0px 1px 0px #000000;
 }
+
+button:hover {
+    background-color: #ebd752;
+}
+
+button:active{
+    position: relative;
+    top: 1px;
+}
+
+/* BODY */
