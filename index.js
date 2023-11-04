@@ -49,3 +49,25 @@ const buscarPokemon = async (valor) => {
         await agregarFicha(dataDos);
     }
 };
+
+// Función para buscar la url de cada pokemon de la API
+const buscarUrl = async (valor) => {
+    const responseUrl = await fetch(`https://pokeapi.co/api/v2/pokemon/${valor}`);
+    const dataDos = await responseUrl.json();
+    return dataDos;
+}
+
+// funcion para agregar la ficha de cada pokemon a la pagina
+const agregarFicha = async (valor) => {
+    console.log('Valor:', valor);
+    const ficha = document.createElement("div");
+    const dataDosObj = await buscarUrl(valor);
+    console.log(dataDosObj);
+
+    const crearElemento = (tag, clase, contenido) => {
+        const elemento = document.createElement(tag);
+        if (clase) elemento.classList.add(clase);
+        if (contenido) elemento.innerHTML = contenido;
+        return elemento;
+    };
+}
