@@ -15,18 +15,24 @@ document.getElementById("buscar").addEventListener("click", async () => {
 
     const cards = document.querySelectorAll("body div.card");
 
-
+    cards.forEach(card => {
+        card.remove();
+    });
 
     const notfound = document.querySelectorAll("h3");
 
-
+    notfound.forEach(notfound => {
+        notfound.remove();
+    });
 
     let nombrePokemon = document.getElementById("nombre");
     let valor = nombrePokemon.value.toLowerCase();
 
     await buscarPokemon(valor);
 
+    await buscarUrl(valor);
 
+    await agregarFicha(valor);
 
 });
 
@@ -63,11 +69,4 @@ const agregarFicha = async (valor) => {
     const ficha = document.createElement("div");
     const dataDosObj = await buscarUrl(valor);
     console.log(dataDosObj);
-
-    const crearElemento = (tag, clase, contenido) => {
-        const elemento = document.createElement(tag);
-        if (clase) elemento.classList.add(clase);
-        if (contenido) elemento.innerHTML = contenido;
-        return elemento;
-    };
 }
