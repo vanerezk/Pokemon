@@ -1,142 +1,196 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-/*Header*/
-
 header {
-    padding: 0px 0 20px 0;
+  padding: 0px 0 20px 0;
 }
 
 h1 {
-    text-align: center;
-    margin-bottom: 10px;
-    margin-top: 5px;
-
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 5px;
 }
 
 .buscadorPokemon {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 #nombre {
-    width: 200px;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 15px;
-    box-sizing: border-box;
+  width: 200px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  box-sizing: border-box;
 }
 
 button {
-    width: auto;
-    box-shadow: 8px 8px 14px -6px #e39c32;
-    background-color:#ebda6a;
-    color: white;
-    font-weight: bolder;
-    padding: 14px 20px;
-    margin: 8px 10px 8px 10px;
-    border: 1px solid #ebda6a;
-    border-radius: 15px;
-    cursor: pointer;
-    text-shadow: 0px 1px 0px #000000;
+  width: auto;
+  box-shadow: 8px 8px 14px -6px #e39c32;
+  background-color: #ebda6a;
+  color: white;
+  font-weight: bolder;
+  padding: 14px 20px;
+  margin: 8px 10px 8px 10px;
+  border: 1px solid #ebda6a;
+  border-radius: 15px;
+  cursor: pointer;
+  text-shadow: 0px 1px 0px #000000;
 }
 
 button:hover {
-    background-color: #ebd752;
+  background-color: #ebd752;
 }
 
-button:active{
-    position: relative;
-    top: 1px;
+button:active {
+  position: relative;
+  top: 1px;
 }
 
-/* BODY */
-body{
-    background-color: rgba(255, 0, 0, 0.733);
-    font-family: 'Times New Roman', Times, serif;
-    margin: 0px;
-    position:relative;
+body {
+  background-color: rgba(255, 0, 0, 0.733);
+  font-family: "Times New Roman", Times, serif;
+  margin: 0px;
+  position: relative;
 }
 
 .card {
-    position: relative;
-    height: fit-content;
-    font-family: 'Roboto Mono', monospace;
-    max-width: 900px;
-    border-radius: 4px;
-    color: #000;
-    text-align: center;
-    padding: 10px;
-    margin: 50px auto auto auto;
-    background-color: #eabcbc;
-    border: 1px solid black;
-    gap: 20px;
-    
+  position: relative;
+  height: fit-content;
+  font-family: "Roboto Mono", monospace;
+  max-width: 900px;
+  border-radius: 4px;
+  color: #000;
+  text-align: center;
+  padding: 10px;
+  margin: 50px auto auto auto;
+  background-color: #eabcbc;
+  border: 1px solid black;
+  gap: 20px;
 }
 
 .card::before {
-    content: '';
-    background: radial-gradient(black 33%, transparent 33%);
-    background-size: 3px 3px;
-    border-radius: 4px;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    left: 10px;
-    top: 10px;
-    z-index: -1;
+  content: "";
+  background: radial-gradient(black 33%, transparent 33%);
+  background-size: 3px 3px;
+  border-radius: 4px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  z-index: -1;
 }
 
 .card h2 {
-    text-transform: capitalize;
+  text-transform: capitalize;
 }
 
 .card p {
-    display: flex;
-    justify-content: flex-start;
-    align-content: flex-start;
-    padding: 5px;
-    font-size: 18px;
-    text-transform: uppercase;
-
-
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  padding: 5px;
+  font-size: 18px;
+  text-transform: uppercase;
 }
 
 .card img {
-    border-radius: 50%;
-    position: relative;
-    width: 150px;
-    margin: 10px 20px 10px 20px;
-    background-color: rgb(223, 223, 223);
+  border-radius: 50%;
+  position: relative;
+  width: 150px;
+  margin: 10px 20px 10px 20px;
+  background-color: rgb(223, 223, 223);
 }
 
-/*footer*/
-
 footer {
-    display: block;
-    position: fixed;
-    text-align: center;
-    bottom: 0;
-    margin: 0px;
-    width: 100%;
-    height: auto;
-    background-color: #f1f1f1;
-    padding: 5px;
+  display: block;
+  position: fixed;
+  text-align: center;
+  bottom: 0;
+  margin: 0px;
+  width: 100%;
+  height: auto;
+  background-color: #f1f1f1;
+  padding: 5px;
 }
 
 /*Mensaje de error*/
 
 h3 {
-    display: flex;
-    justify-content: center;
-    color: #FFCD00;
-    font-size: 40px;
-    margin-top: 20px;
-    font-family: 'Pokemon Solid', sans-serif;
-    text-shadow: 2px 1px 0 #356ABC, -1px -1px 0 #356ABC, 1px -1px 0 #356ABC, -1px 1px 0 #356ABC, 0px 1px 0 #356ABC, 1px 0px 0 #356ABC, 0px -1px 0 #356ABC, -1px 0px 0 #356ABC;
+  display: flex;
+  justify-content: center;
+  color: #ffcd00;
+  font-size: 40px;
+  margin-top: 20px;
+  font-family: "Pokemon Solid", sans-serif;
+  text-shadow: 2px 1px 0 #356abc, -1px -1px 0 #356abc, 1px -1px 0 #356abc,
+    -1px 1px 0 #356abc, 0px 1px 0 #356abc, 1px 0px 0 #356abc, 0px -1px 0 #356abc,
+    -1px 0px 0 #356abc;
+}
+
+/*  CSS FICHA AFTER Y BEFORE*/
+
+.altura::before {
+  content: "Height: ";
+}
+
+.altura::after {
+  content: "m. ";
+}
+
+.peso::before {
+  content: "Weight: ";
+}
+
+.peso::after {
+  content: "kg. ";
+}
+
+.vida::before {
+  content: "Health points: ";
+}
+
+.vida::after {
+  content: " HP. ";
+}
+
+.ataque::before {
+  content: "Attack points: ";
+}
+
+.ataque::after {
+  content: " AP.";
+}
+
+.defensa::before {
+  content: "Defense points: ";
+}
+
+.defensa::after {
+  content: " DP.";
+}
+
+.velocidad::before {
+  content: "Speed: ";
+}
+
+.velocidad::after {
+  content: " SP. ";
+}
+
+.tipo {
+  padding: 5px;
+  margin: 5px;
+  border-radius: 4px;
+  border: 1px dashed black;
+}
+
+.tipo::before {
+  content: "Type:   ";
 }
