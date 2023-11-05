@@ -1,5 +1,5 @@
 let vid = document.getElementById("myMusic");
-vid.volume = 0.05;
+vid.volume = 0.1;
 
 document.getElementById("nombre").addEventListener("keydown", (e) => {
   if (e.key === "Enter") {
