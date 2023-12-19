@@ -9,22 +9,67 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.cdnfonts.com/css/pokemon-solid?styles=24573" rel="stylesheet">
 </head>
-<header>
-
-    <h1><a><img src="https://fontmeme.com/permalink/231102/187efe9a23703852ffc83845a6e0fdb1.png" alt="pokemon-font"
-                border="0"></a></h1>
-    <div class="buscadorPokemon">
-        <input type="text" id="nombre" placeholder="Search your pokémon...">
-        <button id="buscar">Search</button>
-    </div>
-</header>
 
 <body>
-    <audio src="./PokemonMusic.mp3" autoplay="autoplay" loop="loop" id="myMusic"></audio>
-    <script src="index.js"></script>
+    <header>
+        <figure>
+            <a href="javascript:window.location.reload(true)">
+                <img src="https://fontmeme.com/permalink/231102/187efe9a23703852ffc83845a6e0fdb1.png"
+                    alt="pokemon-font">
+            </a>
+        </figure>
+        <audio src="/PokemonMusic.mp3" autoplay="autoplay" loop="loop" id="myMusic"></audio>
+    </header>
+    <main>
+
+        <section class="buscadorPokemon">
+            <div>
+                <input type="search" id="nombre" placeholder="Search your pokémon...">
+                <button id="buscar">Search</button>
+            </div>
+        </section>
+        <section class="parent">
+        </section>
+        <section>
+            <a href="#0" class="popup-trigger icon-botton">?</a>
+            <div class="popup" role="alert">
+                <div class="popup-container">
+                    <div class="popup-container-content">
+                        <h4>About</h4>
+                        <p>Esta aplicacion es de búsqueda de Pokémones. Cuando el usuario ingresa el nombre de
+                            un Pokémon o el ID, el código obtiene datos directamente de la API de Pokemon que contiene
+                            información sobre los Pokémon y filtra los resultados según lo ingresado.
+                            Si no se encuentran resultados, muestra un mensaje indicando que el Pokémon no existe. Si
+                            hay resultados, crea un elemento de tarjeta para cada Pokémon y muestra su nombre,id,
+                            altura, peso, estadísticas, y tipos. También muestra imágenes de los sprites
+                            frontal y traseros del Pokémon, así como versiones brillantes si están disponibles al pasar
+                            el mouse por encima. </p>
+                    </div>
+                    <div id="linkedin" class="popup-container-content">
+                        <h4>Linkedin</h4>
+                        <p><a href="https://www.linkedin.com/in/vanessarezk">Vanessa</a>
+                            <br>
+                            <a href="https://www.linkedin.com/in/franciscordtm">Francisco</a>
+                            <br>
+                            <a href="https://www.linkedin.com/in/asanchezsoy">Angel</a>
+                            <br>
+                            <a href="https://www.linkedin.com/in/glorian-arrieta-jaimes-5523b4225/">Glorian</a>
+                        </p>
+                    </div>
+                    <a href="#0"><i class="fa fa-times-circle popup-close fa-2x"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p> Pokedex © 2023 - Hack a Boss</p>
+    </footer>
+    <script src="./Javascript/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./Javascript/help.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/c64cb6bab9.js" crossorigin="anonymous"></script>
 </body>
-<footer>
-    <p> Pokedex © 2023 - HAB Grupo 3</p>
-</footer>
+
 
 </html>
