@@ -359,4 +359,10 @@ footer {
   #buscar {
     display: none;
   }
+  
+}
+@media screen and (max-width: 600px) {
+  #icon-botton.popup-trigger{
+    display: none;
+  }
 }
