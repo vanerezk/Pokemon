@@ -42,8 +42,7 @@ const buscarPokemon = async (valor) => {
 
   let resultados = data.results.filter(
     (pokemon) =>
-      pokemon.name.includes(valor.toLowerCase()) ||
-      pokemon.url.includes(`/${valor}/`)
+      pokemon.name.includes(valor.toLowerCase())
   );
 
   if (resultados.length === 0) {
